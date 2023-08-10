@@ -1,0 +1,53 @@
+:root {
+    --BackgrounColor: #252525;
+    --Text: #ffffff;
+}
+
+@font-face {
+    font-family: 'Empty-Page';
+    src: url(../fonts/emptypageDEMO.otf);
+}
+
+* {
+    margin: 0;
+    color: var(--Text);
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: 'Empty-Page', Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--BackgrounColor);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 0 25px;
+    margin-bottom: 75px;
+}
+
+/* Media Queries Styles */
+
+/* sm */
+@media (width <=512px) {
+    main {
+        margin-bottom: 0;
+    }
+}
+
+/* 2xl */
+@media (width > 1400px) {
+    * {
+        font-size: 1.3rem;
+    }
+}
